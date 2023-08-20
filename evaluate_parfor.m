@@ -90,22 +90,22 @@ parfor i=1:image_num
 end
 
 % 计算各个指标的平均值
-EN(image_num+1,1) = mean(EN);
-SD(image_num+1,1) = mean(SD);
-MI(image_num+1,1) = mean(MI);
-Qabf(image_num+1,1) = mean(Qabf);
-FMI_pixel(image_num+1,1) = mean(FMI_pixel);
-FMI_dct(image_num+1,1) = mean(FMI_dct);
-FMI_w(image_num+1,1) = mean(FMI_w);
-Nabf(image_num+1,1) = mean(Nabf);
-SCD(image_num+1,1) = mean(SCD);
-SSIM(image_num+1,1) = mean(SSIM);
-MS_SSIM(image_num+1,1) = mean(MS_SSIM);
-EPI(image_num+1,1) = mean(EPI);
-AG(image_num+1,1) = mean(AG);
-SF(image_num+1,1) = mean(SF);
-VIF(image_num+1,1) = mean(VIF);
-CC(image_num+1,1) = mean(CC);
+EN(image_num+1,1) = mean(EN(1:image_num,1));
+SD(image_num+1,1) = mean(SD(1:image_num,1));
+MI(image_num+1,1) = mean(MI(1:image_num,1));
+Qabf(image_num+1,1) = mean(Qabf(1:image_num,1));
+FMI_pixel(image_num+1,1) = mean(FMI_pixel(1:image_num,1));
+FMI_dct(image_num+1,1) = mean(FMI_dct(1:image_num,1));
+FMI_w(image_num+1,1) = mean(FMI_w(1:image_num,1));
+Nabf(image_num+1,1) = mean(Nabf(1:image_num,1));
+SCD(image_num+1,1) = mean(SCD(1:image_num,1));
+SSIM(image_num+1,1) = mean(SSIM(1:image_num,1));
+MS_SSIM(image_num+1,1) = mean(MS_SSIM(1:image_num,1));
+EPI(image_num+1,1) = mean(EPI(1:image_num,1));
+AG(image_num+1,1) = mean(AG(1:image_num,1));
+SF(image_num+1,1) = mean(SF(1:image_num,1));
+VIF(image_num+1,1) = mean(VIF(1:image_num,1));
+CC(image_num+1,1) = mean(CC(1:image_num,1));
 LastName(image_num+1,1) = {'average'};
 
 %写入到csv文件(保存到融合图像所在的路径)
